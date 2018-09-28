@@ -1,0 +1,53 @@
+package test;
+
+import java.text.Format;
+import java.util.Arrays;
+
+class Employee
+{
+	public int salary;
+	public String Name;
+	
+	public Employee(String nString ,int sal) {
+		// TODO Auto-generated constructor stub
+		this.Name = nString;
+		this.salary = sal;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return String.format("(%s , %d)", this.Name , this.salary);
+	}
+	
+}
+
+class comp extends Employee implements Comparable<Employee> {	
+	
+
+	public comp(String nString, int sal) {
+		super(nString, sal);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+    public int compareTo(Employee employe) {
+        return (this.salary - employe.salary);
+    }
+}
+public class EmP {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee [] employees = new Employee[4];
+		
+		employees[0] = new Employee("a" , 10000);
+		employees[1] = new Employee("b" , 20000);
+		employees[2] = new Employee("c" , 30000);
+		employees[3] = new Employee("d" , 50000);
+
+		System.out.println("Before Sorting" + Arrays.toString(employees));
+		
+	}
+
+}

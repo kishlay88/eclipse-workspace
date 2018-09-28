@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Spring3MVC-part2">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <property name="context-root" value="Spring3MVC-part2"/>
+        <property name="java-output-path" value="/Spring3MVC-part2/build/classes"/>
+    </wb-module>
+</project-modules>

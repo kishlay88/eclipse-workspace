@@ -1,0 +1,13 @@
+package test;
+
+
+public class newtest {
+
+	final int a;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		a=1;
+	}
+
+}

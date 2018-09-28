@@ -1,0 +1,36 @@
+package CLinkedList;
+
+public class CLinkedList {
+
+	Node head;
+	
+	class Node {
+		
+		public int data;
+		Node next;
+		
+		public Node(int a) {
+			// TODO Auto-generated constructor stub
+			this.data = a;
+			this.next=null;
+		} 
+	}
+	
+	public void append(int d) {
+		
+		Node node = new Node(d);
+		
+		Node last = head ;
+		
+		if (head == null)
+		{
+			return;
+		}
+		while(last.next != null)
+			last=last.next;
+		
+		last.next=node;
+		last.next.next = head;
+				
+	}
+}

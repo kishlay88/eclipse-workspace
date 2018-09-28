@@ -1,0 +1,25 @@
+package test;
+
+import java.text.Format;
+import java.util.Arrays;
+
+public class EmP {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employeee [] employees = new Employeee[4];
+		
+		employees[0] = new Employeee("a" , 10000);
+		employees[1] = new Employeee("b" , 20000);
+		employees[2] = new Employeee("c" , 30000);
+		employees[3] = new Employeee("d" , 50000);
+
+		System.out.println("Before Sorting" + Arrays.toString(employees));
+		
+		Arrays.sort(employees);
+		
+		System.out.println("After Sorting" + Arrays.toString(employees));
+		
+	}
+
+}

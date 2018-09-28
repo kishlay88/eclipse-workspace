@@ -1,0 +1,36 @@
+package test;
+
+import java.awt.print.Printable;
+
+class student {
+	
+	public int id;
+	public String name;
+
+	public void student(int i , String s)
+	{
+		this.id = i;
+		this.name = s;
+	
+	}
+	
+	public boolean equals(Object obj)
+	{
+		return(this==obj);
+	}
+}
+
+public class EqualsHashcode {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		student student1 = new student();
+		student student2 = new student();
+		
+		if (student1.equals(student1)) 
+			System.out.println("Both are equal");
+	}
+	
+}
+

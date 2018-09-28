@@ -1,0 +1,30 @@
+package test;
+
+import java.util.*;
+import java.util.Map.Entry;
+
+public class DataS {
+
+
+	static DataS s = new DataS();
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		System.out.println(s.getClass().getName());
+		
+		
+		// Create a LinkedHashMap 
+        LinkedHashMap<String,Integer> m =  
+                new LinkedHashMap<String, Integer>(); 
+          
+        m.put("1 - Bedroom" , 25000); 
+        m.put("2 - Bedroom" , 50000); 
+        m.put("3 - Bedroom" , 75000); 
+        m.put("1 - Bedroom - hall", 65000); 
+        m.put("2 - Bedroom - hall", 85000); 
+        m.put("3 - Bedroom - hall", 105000); 
+	}
+			
+	}

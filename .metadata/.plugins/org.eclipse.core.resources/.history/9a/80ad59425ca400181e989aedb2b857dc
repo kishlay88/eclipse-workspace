@@ -1,0 +1,57 @@
+package test;
+
+public class Sstring {
+
+	public static String removeZero(String str)
+	{
+		// Count leading zeros
+		int i = 0;
+		//while (str.charAt(i) != '0')
+		//	i++;
+
+		// Convert str into StringBuffer as Strings
+		// are immutable.
+		StringBuffer sb = new StringBuffer(str);
+		//StringBuffer sb1 = new StringBuffer();
+		
+		Long a = Long.valueOf(str);
+		int l = str.length();
+		//i=l;
+		
+		String ss = sb.substring(l-i-1, l);
+		
+		while (ss == "0")
+		{
+			i++;
+			String ss = sb.substring(l-i-1, l);
+		}
+		System.out.println(ss);
+		
+		long  b = a.longValue();
+		
+		System.out.println(b);
+		while ( ss == "0")
+		{
+			b=b/10;
+			i++;
+		}
+		
+		System.out.println(i);
+		//Long c = Long.ne
+		// The StringBuffer replace function removes
+		// i characters from given index (0 here)
+		//sb.replace(i, str.length(), "");
+		String sb1 = sb.substring(0, i-1);
+        
+		//return b.toString(); // return in String
+		return sb1.toString();
+	}
+
+	// Driver code
+	public static void main (String[] args)
+	{
+		String str = "1235690000000";
+		str = removeZero(str);
+		System.out.println(str);
+	}
+}

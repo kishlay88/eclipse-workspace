@@ -1,0 +1,24 @@
+package test;
+
+class Geeks
+{
+	final int a=0 ;
+	
+    void display()
+       {
+           System.out.println("Hello World!");
+       }
+}
+
+public class newtest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			
+		Geeks obj = new Geeks();
+		 
+        obj.display();
+        System.out.println("Value of a =" + obj.a);
+	}
+
+}

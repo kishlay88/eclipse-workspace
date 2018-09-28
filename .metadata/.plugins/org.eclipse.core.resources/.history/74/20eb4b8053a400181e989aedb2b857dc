@@ -1,0 +1,32 @@
+package test;
+
+public class Sstring {
+
+	public static String removeZero(String str)
+	{
+		// Count leading zeros
+		int i = 0;
+		//while (str.charAt(i) != '0')
+		//	i++;
+
+		// Convert str into StringBuffer as Strings
+		// are immutable.
+		StringBuffer sb = new StringBuffer(str);
+		
+		Long a = Long.valueOf(str);
+
+		// The StringBuffer replace function removes
+		// i characters from given index (0 here)
+		sb.replace(i, str.length(), "");
+        
+		return a.toString(); // return in String
+	}
+
+	// Driver code
+	public static void main (String[] args)
+	{
+		String str = "1235690000000";
+		str = removeZero(str);
+		System.out.println(str);
+	}
+}

@@ -1,0 +1,61 @@
+package test;
+
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class CollC {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		List<String> list = new ArrayList<String>();
+		
+		List<Integer> list2 = new LinkedList<Integer>();
+		List<Integer> list3 = new LinkedList<Integer>();
+		
+		list.add("ll");
+		list.add("LL");
+		//list.add("SS");
+		
+		list2.add(1);
+		list2.add(3);
+		list2.add(2);
+		
+		
+		list3.add(1);
+		list3.add(2);
+		
+		System.out.println(list3.containsAll(list2));
+		Set<String> set = new HashSet<>();
+		
+		Map<String, Integer> map = new HashMap<>();
+		
+	
+		map.put("a", 1);
+		map.put("b", 2);
+		
+		System.out.println(map);
+		
+		map.remove("a");
+		set.add("kk1");
+		set.add("kk2");
+		Iterator iterator1 = set.iterator();
+		Iterator iterator = list.iterator();
+		Iterator iterator2 = list2.iterator();
+		
+		while (iterator.hasNext())
+		{
+			System.out.println(iterator.next());
+			System.out.println(iterator2.next());
+			System.out.println(iterator1.next());
+		}
+	}
+
+}

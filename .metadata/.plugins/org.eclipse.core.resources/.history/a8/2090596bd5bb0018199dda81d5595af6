@@ -1,0 +1,25 @@
+package test;
+
+import java.util.*;
+
+public class DataS {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+			Hashtable hashtable = new Hashtable<>();
+			HashMap hashMap = new HashMap<>();
+			Map m = Collections.synchronizedMap(hashMap);
+			Enumeration enum1,enum2;
+			
+			hashtable.put(1, "2");
+			
+			enum1 = hashtable.keys();
+			
+			m.put(2, "34");
+			System.out.println(m.containsKey(1));
+			System.out.println(hashtable.get(enum1.nextElement()));
+			System.out.println(hashtable.remove(1));
+	}
+
+}

@@ -1,0 +1,21 @@
+package CLinkedList;
+
+public class CLinkListMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+			CLinkedList cLinkedList = new CLinkedList();
+			
+			cLinkedList.append(1);
+			cLinkedList.append(2);
+			cLinkedList.append(3);
+			cLinkedList.append(4);
+			cLinkedList.append(5);
+			
+			cLinkedList.prntCLinkedList();
+			
+			System.out.println(cLinkedList.detectLoop());
+	}
+
+}

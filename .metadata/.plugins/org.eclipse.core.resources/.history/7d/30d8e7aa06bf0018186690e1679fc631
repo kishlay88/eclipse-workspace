@@ -1,0 +1,44 @@
+package LinkedList;
+
+public class newlist {
+	
+	Node head;
+	static int index = 1 ;
+	
+	public class Node {
+		
+		int data;
+		Node next;
+		
+		public Node(int d) {
+			// TODO Auto-generated constructor stub
+			data = d;
+			next = null;
+			System.out.println("Node "+ index + " created");
+			index++;
+		}
+	
+	}
+	
+	public void push(int a) {
+		
+		Node nodeN = new Node(a);
+		
+		nodeN.next= head;
+		head = nodeN;
+		
+	}
+	
+	public void disp_list(Node mNewlist) {
+		
+		Node last = head;
+	
+		while (last != null)
+			{
+				System.out.println("Element = " + mNewlist.data );
+				last=mNewlist.next;
+			}
+	}
+	
+	
+}

@@ -1,0 +1,15 @@
+package test;
+
+public class Sstring {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String s = "Kishlay";
+		s = "KKKK;"
+		StringBuffer sb = new StringBuffer("KK");
+		//sb = "KK"
+		System.out.println(s);
+	}
+
+}

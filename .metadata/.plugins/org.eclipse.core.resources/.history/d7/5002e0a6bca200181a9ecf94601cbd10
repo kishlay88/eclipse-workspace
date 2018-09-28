@@ -1,0 +1,29 @@
+package test;
+
+import java.*;
+
+class box {
+	
+	box() 
+	{
+		Integer i = 0;
+	}
+	
+	public void prnt()	
+	{
+		System.out.println(this.i);
+	}
+}
+
+public class Autoboxing {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	box b = new box();
+	
+	b.prnt();
+	
+	}
+
+}
