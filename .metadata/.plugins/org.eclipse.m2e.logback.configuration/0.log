@@ -2359,3 +2359,7 @@ org.eclipse.core.internal.resources.ResourceException: Resource '/SpringExamples
 2018-09-28 10:23:31,887 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\eclipse-workspace\test\src\main\resources
 2018-09-28 10:23:31,889 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-09-28 10:23:31,890 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\eclipse-workspace\test\src\test\resources
+2018-09-28 18:36:14,182 [Worker-96] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-28 18:36:14,183 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\eclipse-workspace\test\src\main\resources
+2018-09-28 18:36:14,184 [Worker-96] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-28 18:36:14,185 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\eclipse-workspace\test\src\test\resources
