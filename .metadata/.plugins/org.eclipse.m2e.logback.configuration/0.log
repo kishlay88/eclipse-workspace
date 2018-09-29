@@ -2363,3 +2363,107 @@ org.eclipse.core.internal.resources.ResourceException: Resource '/SpringExamples
 2018-09-28 18:36:14,183 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\eclipse-workspace\test\src\main\resources
 2018-09-28 18:36:14,184 [Worker-96] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-09-28 18:36:14,185 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\eclipse-workspace\test\src\test\resources
+2018-09-29 14:04:06,200 [Worker-186] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.EarLifecycleMapping lifecycle mapping for MavenProject: root.project:ear:1.0 @ C:\Users\kumark\git\eclipse-workspace\project\ear\pom.xml.
+2018-09-29 14:04:06,310 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project:ejbs:jar:1.0 is missing, no dependency information available
+2018-09-29 14:04:07,879 [Worker-186] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/root/project/servlets/servlet/1.0/servlet-1.0.pom
+2018-09-29 14:04:07,881 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project.servlets:servlet:war:1.0 is missing, no dependency information available
+2018-09-29 14:04:08,129 [Worker-186] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/root/project/primary-source/1.0/primary-source-1.0.pom
+2018-09-29 14:04:08,130 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project:primary-source:jar:1.0 is missing, no dependency information available
+2018-09-29 14:04:08,383 [Worker-186] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/root/project/projects/logging/1.0/logging-1.0.pom
+2018-09-29 14:04:08,385 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project.projects:logging:jar:1.0 is missing, no dependency information available
+2018-09-29 14:04:08,641 [Worker-186] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/root/project/servlets/servlet/1.0/servlet-1.0.war
+2018-09-29 14:04:08,883 [Worker-186] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/root/project/primary-source/1.0/primary-source-1.0.jar
+2018-09-29 14:04:09,124 [Worker-186] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/root/project/projects/logging/1.0/logging-1.0.jar
+2018-09-29 14:04:10,219 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:10,220 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\ear\src\main\resources
+2018-09-29 14:04:10,471 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project:ejbs:jar:1.0 is missing, no dependency information available
+2018-09-29 14:04:10,474 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project.servlets:servlet:war:1.0 is missing, no dependency information available
+2018-09-29 14:04:10,478 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project:primary-source:jar:1.0 is missing, no dependency information available
+2018-09-29 14:04:10,480 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project.projects:logging:jar:1.0 is missing, no dependency information available
+2018-09-29 14:04:10,494 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:10,499 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\ear\src\main\resources
+2018-09-29 14:04:11,507 [Worker-186] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.EjbLifecycleMapping lifecycle mapping for MavenProject: root.project:ejbs:1.0 @ C:\Users\kumark\git\eclipse-workspace\project\ejbs\pom.xml.
+2018-09-29 14:04:11,510 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project:primary-source:jar:1.0 is missing, no dependency information available
+2018-09-29 14:04:11,511 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project.projects:logging:jar:1.0 is missing, no dependency information available
+2018-09-29 14:04:11,556 [Worker-186] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.EarLifecycleMapping lifecycle mapping for MavenProject: root.project:ear:1.0 @ C:\Users\kumark\git\eclipse-workspace\project\ear\pom.xml.
+2018-09-29 14:04:11,570 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project.servlets:servlet:war:1.0 is missing, no dependency information available
+2018-09-29 14:04:12,013 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:12,029 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-29 14:04:12,061 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:12,062 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\ejbs\src\test\resources
+2018-09-29 14:04:12,445 [Worker-193] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project:primary-source:jar:1.0 is missing, no dependency information available
+2018-09-29 14:04:12,454 [Worker-193] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project.projects:logging:jar:1.0 is missing, no dependency information available
+2018-09-29 14:04:12,456 [Worker-193] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project.servlets:servlet:war:1.0 is missing, no dependency information available
+2018-09-29 14:04:12,468 [Worker-193] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:12,469 [Worker-193] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\ear\src\main\resources
+2018-09-29 14:04:12,513 [Worker-193] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project:primary-source:jar:1.0 is missing, no dependency information available
+2018-09-29 14:04:12,514 [Worker-193] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project.projects:logging:jar:1.0 is missing, no dependency information available
+2018-09-29 14:04:12,520 [Worker-193] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:12,531 [Worker-193] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-29 14:04:12,533 [Worker-193] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:12,534 [Worker-193] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\ejbs\src\test\resources
+2018-09-29 14:04:12,633 [Worker-193] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: kk:kk:0.0.1-SNAPSHOT @ C:\Users\kumark\git\eclipse-workspace\kk\pom.xml.
+2018-09-29 14:04:12,841 [Worker-193] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:12,842 [Worker-193] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\kk\src\main\resources
+2018-09-29 14:04:12,843 [Worker-193] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:12,844 [Worker-193] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\kk\src\test\resources
+2018-09-29 14:04:12,947 [Worker-193] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: root.project.projects:logging:1.0 @ C:\Users\kumark\git\eclipse-workspace\project\projects\logging\pom.xml.
+2018-09-29 14:04:12,994 [Worker-193] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.EjbLifecycleMapping lifecycle mapping for MavenProject: root.project:ejbs:1.0 @ C:\Users\kumark\git\eclipse-workspace\project\ejbs\pom.xml.
+2018-09-29 14:04:12,996 [Worker-193] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project:primary-source:jar:1.0 is missing, no dependency information available
+2018-09-29 14:04:13,106 [Worker-193] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.EarLifecycleMapping lifecycle mapping for MavenProject: root.project:ear:1.0 @ C:\Users\kumark\git\eclipse-workspace\project\ear\pom.xml.
+2018-09-29 14:04:13,111 [Worker-193] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project.servlets:servlet:war:1.0 is missing, no dependency information available
+2018-09-29 14:04:13,431 [Worker-193] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:13,433 [Worker-193] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\projects\logging\src\main\resources
+2018-09-29 14:04:13,434 [Worker-193] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:13,435 [Worker-193] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\projects\logging\src\test\resources
+2018-09-29 14:04:13,651 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project:primary-source:jar:1.0 is missing, no dependency information available
+2018-09-29 14:04:13,655 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project.servlets:servlet:war:1.0 is missing, no dependency information available
+2018-09-29 14:04:13,668 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:13,669 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\ear\src\main\resources
+2018-09-29 14:04:13,707 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:13,708 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\projects\logging\src\main\resources
+2018-09-29 14:04:13,709 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:13,710 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\projects\logging\src\test\resources
+2018-09-29 14:04:13,915 [Worker-186] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: root.project:primary-source:1.0 @ C:\Users\kumark\git\eclipse-workspace\project\primary-source\pom.xml.
+2018-09-29 14:04:13,997 [Worker-186] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.EjbLifecycleMapping lifecycle mapping for MavenProject: root.project:ejbs:1.0 @ C:\Users\kumark\git\eclipse-workspace\project\ejbs\pom.xml.
+2018-09-29 14:04:14,030 [Worker-186] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.EarLifecycleMapping lifecycle mapping for MavenProject: root.project:ear:1.0 @ C:\Users\kumark\git\eclipse-workspace\project\ear\pom.xml.
+2018-09-29 14:04:14,033 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project.servlets:servlet:war:1.0 is missing, no dependency information available
+2018-09-29 14:04:14,798 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:14,803 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\primary-source\src\main\resources
+2018-09-29 14:04:14,810 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:14,811 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\primary-source\src\test\resources
+2018-09-29 14:04:15,015 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project.servlets:servlet:war:1.0 is missing, no dependency information available
+2018-09-29 14:04:15,022 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:15,023 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\ear\src\main\resources
+2018-09-29 14:04:15,057 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:15,058 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\primary-source\src\main\resources
+2018-09-29 14:04:15,060 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:15,060 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\primary-source\src\test\resources
+2018-09-29 14:04:15,150 [Worker-186] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: root:project:1.0 @ C:\Users\kumark\git\eclipse-workspace\project\pom.xml.
+2018-09-29 14:04:15,207 [Worker-186] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: root.project:primary-source:1.0 @ C:\Users\kumark\git\eclipse-workspace\project\primary-source\pom.xml.
+2018-09-29 14:04:15,272 [Worker-186] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.EjbLifecycleMapping lifecycle mapping for MavenProject: root.project:ejbs:1.0 @ C:\Users\kumark\git\eclipse-workspace\project\ejbs\pom.xml.
+2018-09-29 14:04:15,310 [Worker-186] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.EarLifecycleMapping lifecycle mapping for MavenProject: root.project:ear:1.0 @ C:\Users\kumark\git\eclipse-workspace\project\ear\pom.xml.
+2018-09-29 14:04:15,314 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project.servlets:servlet:war:1.0 is missing, no dependency information available
+2018-09-29 14:04:16,235 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for root.project.servlets:servlet:war:1.0 is missing, no dependency information available
+2018-09-29 14:04:16,245 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:16,248 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\ear\src\main\resources
+2018-09-29 14:04:16,313 [Worker-186] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: root.project:projects:1.0 @ C:\Users\kumark\git\eclipse-workspace\project\projects\pom.xml.
+2018-09-29 14:04:16,365 [Worker-186] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: root.project.projects:logging:1.0 @ C:\Users\kumark\git\eclipse-workspace\project\projects\logging\pom.xml.
+2018-09-29 14:04:16,551 [Worker-186] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: root.project.servlets:servlet:1.0 @ C:\Users\kumark\git\eclipse-workspace\project\servlets\servlet\pom.xml.
+2018-09-29 14:04:16,605 [Worker-186] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.EarLifecycleMapping lifecycle mapping for MavenProject: root.project:ear:1.0 @ C:\Users\kumark\git\eclipse-workspace\project\ear\pom.xml.
+2018-09-29 14:04:17,411 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:17,412 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\servlets\servlet\src\main\resources
+2018-09-29 14:04:17,417 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:17,419 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\servlets\servlet\src\test\resources
+2018-09-29 14:04:17,627 [Worker-191] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:17,628 [Worker-191] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\ear\src\main\resources
+2018-09-29 14:04:17,707 [Worker-191] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:17,708 [Worker-191] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\servlets\servlet\src\main\resources
+2018-09-29 14:04:17,709 [Worker-191] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:17,710 [Worker-191] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\servlets\servlet\src\test\resources
+2018-09-29 14:04:17,754 [Worker-191] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: root.project:servlets:1.0 @ C:\Users\kumark\git\eclipse-workspace\project\servlets\pom.xml.
+2018-09-29 14:04:17,817 [Worker-191] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: root.project.servlets:servlet:1.0 @ C:\Users\kumark\git\eclipse-workspace\project\servlets\servlet\pom.xml.
+2018-09-29 14:04:18,725 [Worker-191] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:18,726 [Worker-191] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\servlets\servlet\src\main\resources
+2018-09-29 14:04:18,727 [Worker-191] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-29 14:04:18,728 [Worker-191] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kumark\git\eclipse-workspace\project\servlets\servlet\src\test\resources
