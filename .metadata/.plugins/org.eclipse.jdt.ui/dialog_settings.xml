@@ -5,6 +5,13 @@
 	<item value="false" key="TypeHierarchyViewPart.linkeditors"/>
 	<item value="2" key="TypeHierarchyViewPart.hierarchyview"/>
 	<item value="filter_imports;" key="filters_last_used"/>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item value="false" key="updateQualifiedNames"/>
+		<item value="*" key="patterns"/>
+		<item value="false" key="updateSimilarElements"/>
+		<item value="1" key="updateSimilarElementsMatchStrategy"/>
+		<item value="false" key="updateTextualMatches"/>
+	</section>
 	<section name="ProblemSeveritiesConfigurationBlock">
 		<item value="false" key="expanded2"/>
 		<item value="false" key="expanded1"/>
@@ -33,6 +40,19 @@
 	<section name="OptionalMessageDialog.hide.">
 		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
 		<item value="false" key="configure_problem_severity_dialog_id"/>
+	</section>
+	<section name="DialogBounds_GenerateHashCodeEqualsDialog">
+		<item value="678" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="736" key="DIALOG_HEIGHT"/>
+		<item value="630" key="DIALOG_X_ORIGIN"/>
+		<item value="35" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.typehierarchy.QuickHierarchy">
+		<item value="true" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_SIZE"/>
+		<item value="400" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_HEIGHT"/>
+		<item value="450" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_WIDTH"/>
+		<item value="false" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_LOCATION"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.dialogs.OpenTypeSelectionDialog2">
 		<item value="true" key="ShowStatusLine"/>
@@ -63,6 +83,28 @@
 		<item value="600" key="width"/>
 		<item value="400" key="height"/>
 	</section>
+	<section name="javadoc">
+		<item value="public" key="access"/>
+		<item value="false" key="noindex"/>
+		<item value="C:\Users\kumark\eclipse-workspace\test\javadoc.xml" key="antpath"/>
+		<item value="false" key="nodeprecatedlist"/>
+		<item value="true" key="use"/>
+		<item value="true" key="author"/>
+		<item value="false" key="nodeprecated"/>
+		<item value="false" key="nonavbar"/>
+		<item value="" key="docletpath"/>
+		<item value="C:\Program Files\Java\jdk1.8.0_161\bin\javadoc.exe" key="javadoc_command_history"/>
+		<item value="1.8" key="source"/>
+		<item value="true" key="version"/>
+		<item value="" key="docletname"/>
+		<item value="true" key="splitindex"/>
+		<item value="true" key="fromStandard"/>
+		<item value="false" key="notree"/>
+		<item value="C:\Users\kumark\eclipse-workspace\test\doc" key="destdir"/>
+		<item value="false" key="openinbrowser"/>
+		<section name="projects">
+		</section>
+	</section>
 	<section name="JavaBuildConfigurationBlock">
 		<item value="false" key="expanded2"/>
 		<item value="false" key="expanded1"/>
@@ -70,8 +112,11 @@
 	</section>
 	<section name="SourceActionDialog.methods">
 		<item value="false" key="SynchronizedModifier"/>
+		<item value="false" key="Blocks"/>
 		<item value="false" key="Comments"/>
+		<item value="2" key="InsertPosition.v2"/>
 		<item value="1" key="VisibilityModifier"/>
+		<item value="false" key="InstanceOf"/>
 		<item value="false" key="FinalModifier"/>
 	</section>
 	<section name="BreadcrumbItemDropDown">
@@ -85,6 +130,13 @@
 		<item value="0" key="HISTORY_SIZE"/>
 		<item value="false" key="CASE_SENSITIVE"/>
 		<item value="11" key="INCLUDE_MASK"/>
+	</section>
+	<section name="JavadocWizardDialog">
+		<item value="818" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="696" key="DIALOG_HEIGHT"/>
+		<item value="560" key="DIALOG_X_ORIGIN"/>
+		<item value="61" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="completion_proposal_size">
 	</section>

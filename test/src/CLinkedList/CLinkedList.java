@@ -1,7 +1,5 @@
 package CLinkedList;
 
-import org.w3c.dom.NamedNodeMap;
-
 public class CLinkedList {
 
 	Node head;

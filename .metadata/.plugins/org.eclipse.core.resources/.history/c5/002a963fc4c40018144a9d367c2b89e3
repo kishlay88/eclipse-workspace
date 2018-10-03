@@ -1,0 +1,58 @@
+package test;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class HashtableH {
+
+	public static void main(String[] args)  {
+		
+		Hashtable< Integer, String> hashtable = new Hashtable<Integer,String>();
+
+		hashtable.put(1, Integer.toString(2));
+		
+		Map<Integer, String > map = new HashMap<Integer,String>(hashtable);
+		
+		hashtable.putAll(map);
+		
+		System.out.println(map);
+	
+		Map<Integer, String> map2 = new HashMap<Integer,String>(map);
+		
+		System.out.println(map2);
+		
+		Set set = map.keySet();
+		Collection<String> set2 = map.values();
+		
+		Iterator iterator1 = set.iterator();
+		
+		System.out.println(set);
+		System.out.println(set2);
+		
+		while (iterator1.hasNext())
+		{
+			System.out.println(iterator1.next());
+		}
+		
+		Iterator<Entry<Integer, String>> iterator = map.entrySet().iterator();
+		
+		while(iterator.hasNext())
+		{
+				
+			Entry<Integer, String> entry = iterator.next();
+			
+			System.out.println( entry.getKey());
+			
+		}
+		
+	}
+	
+
+}
+
+	

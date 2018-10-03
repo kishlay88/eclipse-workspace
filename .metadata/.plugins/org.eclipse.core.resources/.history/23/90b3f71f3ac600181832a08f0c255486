@@ -1,0 +1,15 @@
+package test;
+
+public class StringM {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String string="Kishlay";
+		
+		char [] cs = string.toCharArray();
+		
+		System.out.println(cs);
+	}
+
+}
