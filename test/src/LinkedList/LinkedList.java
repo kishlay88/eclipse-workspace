@@ -28,11 +28,13 @@ public class LinkedList {
 		
 		newl.disp_list();
 		
-		System.out.println();
+		System.out.println("\nDel_node_indexwise");
 		
 		newl.Del_node_indexwise(1);
-	
+		
 		newl.disp_list();
+		
+		System.out.println("\nDel_node_keywise");
 		
 		newl.Del_node_keywise(22);
 		

@@ -96,25 +96,31 @@ public class newlist {
 		try {
 			while(trgt.next != null) {
 					
-					if(trgt.data==srch) {
+					if(trgt.next.data==srch) {
 						trgt.next=trgt.next.next;
 						return;
 					}
 					else
 						trgt=trgt.next;
 			}
-			
-			
+						
 		}
 		catch (Exception e) {
-			// TODO: handle exception
 			System.err.println("\nKey " + srch + " doesnt exist in the linkedlist");
 		}
 	}
 	
 	public void Lcount() {
 		
-		System.out.println("\nLength of Linked list is := " +  index);
+		Node last=head;
+		int length=0;
+		
+		while(last != null)
+		{
+			length++;
+			last=last.next;
+		}
+		System.out.println("\nLength of Linked list is := " +  length);
 	}
 	
 	public void DLinkedList() {
