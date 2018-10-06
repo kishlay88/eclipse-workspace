@@ -3514,3 +3514,12 @@ org.eclipse.jdt.core.JavaModelException: bin/test [in test] is not on its projec
 2018-10-05 18:56:55,350 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory Y:\git_repos\eclipse-workspace\test\src\main\resources
 2018-10-05 18:56:55,355 [Worker-135] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-10-05 18:56:55,370 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory Y:\git_repos\eclipse-workspace\test\src\test\resources
+2018-10-06 11:07:39,951 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2018-10-06 11:07:48,324 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 11:07:48,364 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory Y:\git_repos\eclipse-workspace\test\src\main\resources
+2018-10-06 11:07:48,369 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 11:07:48,375 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory Y:\git_repos\eclipse-workspace\test\src\test\resources
+2018-10-06 11:08:18,172 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 11:08:18,181 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory Y:\git_repos\eclipse-workspace\test\src\main\resources
+2018-10-06 11:08:18,185 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 11:08:18,192 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory Y:\git_repos\eclipse-workspace\test\src\test\resources
