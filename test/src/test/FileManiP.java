@@ -16,12 +16,8 @@ public class FileManiP {
 	public static void main(String[] args) throws IOException {
 		
 		File file = new File("Y:\\KSC_SNR1_config_06072018_new_naming.txt");
-		Scanner scanner = new Scanner(file);
-		//BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
-
-
-		scanner.useDelimiter("/Z");
-			System.out.println(scanner.next());
+		
+		
 	}
 
 }
