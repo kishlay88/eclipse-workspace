@@ -6,6 +6,7 @@ public class TradingSystem {
     public static void main(String[] args) {
         TradingSystem system = null;
         System.out.println(system.category);
+        
     }
 
 }

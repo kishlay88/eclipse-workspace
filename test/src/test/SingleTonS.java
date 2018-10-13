@@ -1,43 +1,34 @@
 package test;
 
-class Single extends Thread{
-	
-	private static final Single single = new Single();
-	
-	private Single() {
-		
+class Single {
+
+	private static Single single;
+
+	private Single() throws CloneNotSupportedException{
+
 	}
-	
-	public static Single getInstance() {
-		
-		return single;
+
+	public static Single getInstance() throws CloneNotSupportedException  {
+		synchronized (Single.class) {
+
+			if (single != null) {
+				return single;
+			}
+
+			return new Single();
+		}
 	}
 
 }
 
 public class SingleTonS {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException, CloneNotSupportedException {
 		// TODO Auto-generated method stub
 
-		
-		
-		Thread t1 = new Thread("t1") { 
-									public void run() {
-										System.out.println(currentThread().getName());
-									}
-		};
-		
-		
-		t1.start();
-		
-		t1.sleep(30);
-		
-		t1.join();
-		
-		
-		
-		
+		Single single = Single.getInstance();
+
+		System.out.println(single);
+
 	}
 }
-	
