@@ -7075,3 +7075,74 @@ org.eclipse.recommenders.utils.Logs$LogTraceException
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-13 13:31:52.965
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-13 18:11:05.214
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-13 18:11:05.230
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2018-10-13 18:11:05.826
+!MESSAGE ERROR: Exception caught while accessing pack file Y:\git_repos\eclipse-workspace\.git\objects\pack\pack-5a9b57b056cf0b003b9af5b362fea091a5011746.pack, the pack file might be corrupt, {1}. Caught {2} consecutive errors while trying to read this pack.
+!STACK 0
+java.io.IOException: The specified network name is no longer available
+	at java.io.RandomAccessFile.readBytes(Native Method)
+	at java.io.RandomAccessFile.read(Unknown Source)
+	at java.io.RandomAccessFile.readFully(Unknown Source)
+	at org.eclipse.jgit.internal.storage.file.PackFile.read(PackFile.java:698)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.load(WindowCache.java:289)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.getOrLoad(WindowCache.java:368)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.get(WindowCache.java:179)
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.pin(WindowCursor.java:347)
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.copy(WindowCursor.java:247)
+	at org.eclipse.jgit.internal.storage.file.PackFile.readFully(PackFile.java:595)
+	at org.eclipse.jgit.internal.storage.file.PackFile.load(PackFile.java:770)
+	at org.eclipse.jgit.internal.storage.file.PackFile.get(PackFile.java:275)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectory.openPackedObject(ObjectDirectory.java:481)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectory.openPackedFromSelfOrAlternate(ObjectDirectory.java:439)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectory.openObject(ObjectDirectory.java:430)
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:159)
+	at org.eclipse.jgit.treewalk.CanonicalTreeParser.reset(CanonicalTreeParser.java:214)
+	at org.eclipse.jgit.treewalk.CanonicalTreeParser.createSubtreeIterator0(CanonicalTreeParser.java:248)
+	at org.eclipse.jgit.treewalk.CanonicalTreeParser.createSubtreeIterator(CanonicalTreeParser.java:226)
+	at org.eclipse.jgit.treewalk.CanonicalTreeParser.createSubtreeIterator(CanonicalTreeParser.java:70)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:1271)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:835)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2018-10-13 18:11:06.246
+!MESSAGE ERROR: Exception caught while accessing pack file Y:\git_repos\eclipse-workspace\.git\objects\pack\pack-5a9b57b056cf0b003b9af5b362fea091a5011746.pack, the pack file might be corrupt, {1}. Caught {2} consecutive errors while trying to read this pack.
+!STACK 0
+java.io.IOException: The specified network name is no longer available
+	at java.io.RandomAccessFile.readBytes(Native Method)
+	at java.io.RandomAccessFile.read(Unknown Source)
+	at java.io.RandomAccessFile.readFully(Unknown Source)
+	at org.eclipse.jgit.internal.storage.file.PackFile.read(PackFile.java:698)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.load(WindowCache.java:289)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.getOrLoad(WindowCache.java:368)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.get(WindowCache.java:179)
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.pin(WindowCursor.java:347)
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.copy(WindowCursor.java:247)
+	at org.eclipse.jgit.internal.storage.file.PackFile.readFully(PackFile.java:595)
+	at org.eclipse.jgit.internal.storage.file.PackFile.load(PackFile.java:770)
+	at org.eclipse.jgit.internal.storage.file.PackFile.get(PackFile.java:275)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectory.openPackedObject(ObjectDirectory.java:481)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectory.openPackedFromSelfOrAlternate(ObjectDirectory.java:439)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectory.openObject(ObjectDirectory.java:430)
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:159)
+	at org.eclipse.jgit.treewalk.CanonicalTreeParser.reset(CanonicalTreeParser.java:214)
+	at org.eclipse.jgit.treewalk.CanonicalTreeParser.createSubtreeIterator0(CanonicalTreeParser.java:248)
+	at org.eclipse.jgit.treewalk.CanonicalTreeParser.createSubtreeIterator(CanonicalTreeParser.java:226)
+	at org.eclipse.jgit.treewalk.CanonicalTreeParser.createSubtreeIterator(CanonicalTreeParser.java:70)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:1271)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:835)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
