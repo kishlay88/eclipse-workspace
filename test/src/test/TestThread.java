@@ -1,77 +1,62 @@
 package test;
-class Chat {
-	   boolean flag = false;
 
-	   public synchronized void Question(String msg) {
+import java.security.PublicKey;
+import java.util.ArrayList;
+import java.util.Iterator;
 
-	      if (flag) {
-	         
-	         try {
-	            wait();
-	         } catch (InterruptedException e) {
-	            e.printStackTrace();
-	         }
-	      }
-	      System.out.println(msg);
-	      flag = true;
-	      notify();
-	   }
+class MyThread extends Thread {
 
-	   public synchronized void Answer(String msg) {
-
-	      if (!flag) {
-	         
-	         try {
-	            wait();
-	         } catch (InterruptedException e) {
-	            e.printStackTrace();
-	         }
-	      }
-	      System.out.println(msg);
-	      flag = false;
-	      notify();
-	   }
+	static int k = 0;
+	
+	
+	static class Inner extends Thread {
+		
+		static int ii = 0;
+		public void run() {
+			
+			synchronized (this.getClass()) {
+				
+				
+				System.out.println("Sub-Thread of  thread " + ii++ );
+			}
+		}
 	}
+	
+	public void run() {
 
-	class T1 implements Runnable {
-	   Chat m;
-	   String[] s1 = { "Hi", "How are you ?", "I am also doing fine!" };
+		synchronized (this.getClass()) {
 
-	   public T1(Chat m1) {
-	      this.m = m1;
-	      new Thread(this, "Question").start();
-	   }
+			System.out.println("Child Thread entry " + k++);
+			Inner inner = new Inner();
+			
+			inner.start();
+		}
 
-	   public void run() {
-	   
-	      for (int i = 0; i < s1.length; i++) {
-	         m.Question(s1[i]);
-	      }
-	   }
 	}
+}	
 
-	class T2 implements Runnable {
-	   Chat m;
-	   String[] s2 = { "Hi", "I am good, what about you?", "Great!" };
+public class TestThread {
 
-	   public T2(Chat m2) {
-	      this.m = m2;
-	      new Thread(this, "Answer").start();
-	   }
+	public static void main(String... args) throws InterruptedException {
 
-	   public void run() {
+		// MyThread [] myThread = new MyThread [10];
 
-	      for (int i = 0; i < s2.length; i++) {
-	         m.Answer(s2[i]);
-	      }
-	   }
+		int counter = 0;
+
+		ArrayList<MyThread> myThread = new ArrayList<MyThread>();
+
+		while (counter < 10) {
+			myThread.add(new MyThread());
+			counter++;
+		}
+
+		Iterator<MyThread> iterator = myThread.iterator();
+
+		while (iterator.hasNext()) {
+			MyThread myThread2 = (MyThread) iterator.next();
+			myThread2.start();
+
+		}
+
 	}
-
-	public class TestThread {
-
-	   public static void main(String[] args) {
-	      Chat m = new Chat();
-	      new T1(m);
-	      new T2(m);
-	   }
-	}
+}
