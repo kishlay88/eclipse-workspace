@@ -20,7 +20,7 @@ class ProductInfo {
 	static MongoClient mongo = null;
 
 	public ProductInfo() {
-
+/*
 		try {
 
 			mongo = new MongoClient("192.168.56.104", 27017);
@@ -36,7 +36,7 @@ class ProductInfo {
 			System.exit(1);
 
 		}
-
+*/
 	}
 
 	public ProductInfo(String i, String nString, String p, String s, String Q) {
