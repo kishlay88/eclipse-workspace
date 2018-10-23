@@ -1,32 +1,74 @@
 package Product;
 
 import java.net.UnknownHostException;
-import java.util.Iterator;
+import java.util.ArrayList;
 
-import javax.swing.text.Document;
+import org.bson.Document;
 
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.MongoCursor;
+import com.mongodb.client.model.Filters;
 
-public class MongoContext {
+class MongoContext {
 
-	public static void main(String... args) throws UnknownHostException {
-		
+	ProductInfo pInfo = new ProductInfo();
+	
+	public final MongoClient DBConnect() throws UnknownHostException {
+
 		MongoClient mongo = new MongoClient("192.168.56.104", 27017);
-		
-		MongoDatabase database = mongo.getDatabase("admin");
-		MongoCollection<org.bson.Document> collection = database.getCollection("Product");
-		
-	    FindIterable<org.bson.Document> iterDoc = collection.find(); 
-	    
-	    // Getting the iterator 
-	    Iterator it = iterDoc.iterator(); 
-	    
-	    while (it.hasNext()) 
-	       System.out.println(it.next());  
-	    
-	    mongo.close();
+		return mongo;
+
 	}
+
+	public final MongoCollection<org.bson.Document> getCollC() throws UnknownHostException {
+		//MongoClient mongo = DBConnect();
+		MongoCollection<org.bson.Document> collection = pInfo.mongo.getDatabase("admin").getCollection("Product");
+		return collection;
+	}
+
+	public final void DisplayInventory() throws UnknownHostException {
+
+		//MongoClient mongo = DBConnect();
+		MongoCollection collection = getCollC();
+
+		FindIterable<org.bson.Document> findIterable = collection.find();
+
+		MongoCursor<Document> iterable = findIterable.iterator();
+
+		while (iterable.hasNext())
+			System.out.println(iterable.next());
+
+	}
+
+	public final boolean UpdateProduct(String PrimID, String UpdateField, String value) throws UnknownHostException {
+
+		//MongoClient mongo = DBConnect();
+		MongoCollection collection = getCollC();
+
+		try {
+			collection.updateOne(Filters.eq("ID", Integer.parseInt(PrimID)),
+					new org.bson.Document("$set", (new org.bson.Document(UpdateField, Integer.parseInt(value)))));
+		} catch (Exception e) {
+			//mongo.close();
+			return false;
+		}
+		
+		//mongo.close();
+		return true;
+	}
+
+	public final void FindProduct(String PrimID) throws UnknownHostException {
+
+		//MongoClient mongo = DBConnect();
+		MongoCollection collection = getCollC();
+
+		ArrayList<org.bson.Document> Prod = (ArrayList<org.bson.Document>) collection
+				.find(new org.bson.Document("ID", Integer.parseInt(PrimID))).into(new ArrayList<org.bson.Document>());
+
+		System.out.println(Prod);
+		
+	}
+
 }

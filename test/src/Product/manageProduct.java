@@ -2,7 +2,7 @@ package Product;
 
 import java.util.Iterator;
 
-class SearchProduct {
+public class manageProduct {
 	
 		public final void IsProductInStockByID(Integer id) {
 			
