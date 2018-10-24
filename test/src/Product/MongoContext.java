@@ -11,14 +11,13 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.model.Filters;
 
-class MongoContext {
+class MongoContext implements ProjectConstants{
 
-	//MongoClient mongo = null;
-	static final MongoClient mongo = new MongoClient("192.168.56.104", 27017); ;
+	static final MongoClient mongo = new MongoClient(ProjectConstants.MServerIP, ProjectConstants.Mport); 
 
 	public final static MongoCollection<org.bson.Document> getCollC(String Coll)  {
-		// MongoClient mongo = DBConnect();
-		MongoClient mongo = new MongoClient("192.168.56.104", 27017);
+		@SuppressWarnings("resource")
+		MongoClient mongo = new MongoClient(ProjectConstants.MServerIP, ProjectConstants.Mport);
 		MongoCollection<org.bson.Document> collection = mongo.getDatabase("admin").getCollection(Coll);
 		return collection;
 	}
@@ -26,7 +25,7 @@ class MongoContext {
 	public final void DisplayInventory() throws UnknownHostException {
 
 
-		MongoCollection collection = getCollC("Product");
+		MongoCollection<Document> collection = getCollC("Product");
 		FindIterable<org.bson.Document> findIterable = collection.find();
 		MongoCursor<Document> iterable = findIterable.iterator();
 
@@ -37,7 +36,7 @@ class MongoContext {
 
 	public final boolean UpdateProduct(String PrimID, String UpdateField, String value) throws UnknownHostException {
 
-		MongoCollection collection = getCollC("Product");
+		MongoCollection<?> collection = getCollC("Product");
 
 		try {
 			collection.updateOne(Filters.eq("ID", Integer.parseInt(PrimID)),
@@ -53,6 +52,7 @@ class MongoContext {
 
 		MongoCollection collection = getCollC("Product");
 
+		@SuppressWarnings("unchecked")
 		ArrayList<org.bson.Document> Prod = (ArrayList<org.bson.Document>) collection
 				.find(new org.bson.Document("ID", Integer.parseInt(PrimID))).into(new ArrayList<org.bson.Document>());
 

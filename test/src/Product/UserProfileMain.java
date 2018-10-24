@@ -1,9 +1,15 @@
 package Product;
 
 import java.net.UnknownHostException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import javax.swing.text.html.HTMLDocument.HTMLReader.HiddenAction;
+
+import org.bson.Document;
 
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
@@ -11,6 +17,7 @@ import com.mongodb.client.MongoCollection;
 public class UserProfileMain extends MongoContext {
 
 	static MongoClient mongoUP = null;
+	static long UserCount=0;
 	ProductInfo pInfo = new ProductInfo();
 	ManageCart mCart = new ManageCart();
 
@@ -25,7 +32,7 @@ public class UserProfileMain extends MongoContext {
 	}
 
 	public int PupolateNewUserDetails(String nString, String u, String pass, String eid, String dob, List<String> add)
-			throws UnknownHostException {
+			throws UnknownHostException, ParseException {
 
 		userDetails uDetails = new UserProfileMain().new userDetails();
 		uDetails.Name = nString;
@@ -33,15 +40,21 @@ public class UserProfileMain extends MongoContext {
 		uDetails.passwrd = pass;
 		uDetails.EmailID = eid;
 		uDetails.address = add;
+		uDetails.DOB = dob;
 
 		org.bson.Document userDetails = new org.bson.Document();
 		org.bson.Document AddressD = new org.bson.Document();
 
+		userDetails.put("DbID", ++UserCount);
 		userDetails.put("NAME", uDetails.Name);
 		userDetails.put("USERID", uDetails.UsrID);
 		userDetails.put("PASSWORD", uDetails.passwrd);
 		userDetails.put("EMAILID", uDetails.EmailID);
-
+		
+		if(!uDetails.DOB.equals(" "))
+			userDetails.put("DOB", new SimpleDateFormat("yyyy-mm-dd").parse(uDetails.DOB));
+		
+		
 		Iterator<String> itr = uDetails.address.iterator();
 		String elem = "0";
 
@@ -51,7 +64,8 @@ public class UserProfileMain extends MongoContext {
 		}
 
 		userDetails.put("ADDRESS", AddressD);
-		MongoCollection collection = getCollC("UserProfile");
+		System.out.println(userDetails);
+		MongoCollection<Document> collection = getCollC("UserProfile");
 
 		ArrayList<org.bson.Document> Prod = (ArrayList<org.bson.Document>) collection
 				.find(new org.bson.Document("EMAILID", uDetails.EmailID)).into(new ArrayList<org.bson.Document>());
@@ -60,6 +74,7 @@ public class UserProfileMain extends MongoContext {
 			try {
 				collection.insertOne(userDetails);
 			} catch (Exception e) {
+				//collection.updateOne(new org.bson.Document("EMAILID", uDetails.EmailID), userDetails);
 				return 0;
 			}
 
@@ -71,10 +86,21 @@ public class UserProfileMain extends MongoContext {
 
 	}
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public boolean validateUser(String eID, String Passwd) {
 
-		return false;
-
+		MongoCollection collection = getCollC("UserProfile");
+		ArrayList<org.bson.Document> Prod = (ArrayList<org.bson.Document>) collection
+				.find(new org.bson.Document("EMAILID", eID)).into(new ArrayList<org.bson.Document>());
+		
+		if(Prod.get(0).get("PASSWORD").equals(Passwd)) 
+			//System.out.println("Valid User"); 
+			return true;
+		else { 
+			System.out.println("Invalid User");
+			return false;
+		}	
 	}
+	
 
 }
