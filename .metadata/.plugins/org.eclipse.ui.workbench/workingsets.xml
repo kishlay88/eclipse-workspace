@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1538804804735_0" label="Window Working Set" name="Aggregate for window 1538804804734"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1541930108573_1" label="mobile-core-api" name="mobile-core-api"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1541680999767_0" label="Window Working Set" name="Aggregate for window 1541680999766"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1541956656730_2" label="Window Working Set" name="Aggregate for window 1541956656730"/>
 </workingSetManager>

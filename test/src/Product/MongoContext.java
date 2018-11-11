@@ -11,7 +11,7 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.model.Filters;
 
-class MongoContext implements ProjectConstants{
+public class MongoContext implements ProjectConstants{
 
 	static final MongoClient mongo = new MongoClient(ProjectConstants.MServerIP, ProjectConstants.Mport); 
 
@@ -19,7 +19,7 @@ class MongoContext implements ProjectConstants{
 		@SuppressWarnings("resource")
 		MongoClient mongo = new MongoClient(ProjectConstants.MServerIP, ProjectConstants.Mport);
 		MongoCollection<org.bson.Document> collection = mongo.getDatabase("admin").getCollection(Coll);
-		return collection;
+		return collection;	
 	}
 
 	public final void DisplayInventory() throws UnknownHostException {
